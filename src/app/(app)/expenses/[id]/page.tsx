@@ -33,14 +33,16 @@ export default async function ExpenseDetailPage({ params }: { params: Promise<{ 
           </div>
           <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
             {[
-              ['Subtotal', expense.subtotal],
-              ['Tax', expense.tax],
-              ['Total', expense.amount],
-              ['Currency', expense.currency]
-            ].map(([label, value]) => (
-              <div key={label as string} className="rounded-3xl bg-ink-50 p-4 dark:bg-ink-800/60">
+              { label: 'Subtotal', value: expense.subtotal },
+              { label: 'Tax', value: expense.tax },
+              { label: 'Total', value: expense.amount },
+              { label: 'Currency', value: expense.currency }
+            ].map(({ label, value }) => (
+              <div key={label} className="rounded-3xl bg-ink-50 p-4 dark:bg-ink-800/60">
                 <div className="text-sm text-ink-500">{label}</div>
-                <div className="text-xl font-semibold">{typeof value === 'number' ? formatCurrency(Number(value), expense.currency) : String(value)}</div>
+                <div className="text-xl font-semibold">
+                  {label === 'Currency' ? String(value) : formatCurrency(Number(value), expense.currency)}
+                </div>
               </div>
             ))}
           </div>

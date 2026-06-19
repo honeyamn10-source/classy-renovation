@@ -1,4 +1,4 @@
-import { Worker } from 'bullmq';
+import { Worker, type ConnectionOptions } from 'bullmq';
 import IORedis from 'ioredis';
 import { getEnv } from '@/lib/env';
 import { db } from '@/lib/db';
@@ -10,14 +10,14 @@ if (!env.REDIS_URL) {
   process.exit(0);
 }
 
-const connection = new IORedis(env.REDIS_URL, { maxRetriesPerRequest: null });
+const connection = new IORedis(env.REDIS_URL, { maxRetriesPerRequest: null }) as unknown as ConnectionOptions;
 
 new Worker(
   'receipt-processing',
   async (job) => {
     const { expenseId, uploadId } = job.data as { expenseId: string; uploadId: string };
 
-    await db.ocrJob.create({
+    await db.oCRJob.create({
       data: {
         uploadId,
         provider: 'local',

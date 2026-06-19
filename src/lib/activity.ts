@@ -1,3 +1,4 @@
+import { Prisma } from '@prisma/client';
 import { db } from '@/lib/db';
 
 export async function logActivity(userId: string, action: string, entityType?: string, entityId?: string, metadata?: Record<string, unknown>) {
@@ -7,7 +8,7 @@ export async function logActivity(userId: string, action: string, entityType?: s
       action,
       entityType,
       entityId,
-      metadata: metadata ?? undefined
+      metadata: metadata ? (metadata as Prisma.InputJsonValue) : undefined
     }
   });
 }

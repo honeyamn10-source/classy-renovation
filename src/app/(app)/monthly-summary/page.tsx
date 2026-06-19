@@ -14,16 +14,16 @@ export default async function MonthlySummaryPage() {
           </CardHeader>
           <CardContent className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             {[
-              ['Total', summary.totalAmount],
-              ['Parget / Rajan Book', summary.businessCardAmount],
-              ['Tax', summary.taxAmount],
-              ['Materials', summary.materialAmount],
-              ['Tools', summary.toolAmount],
-              ['Fuel', summary.fuelAmount],
-              ['Meals', summary.mealsAmount],
-              ['Misc', summary.miscAmount]
-            ].map(([label, value]) => (
-              <div key={label as string} className="rounded-3xl bg-ink-50 p-4 dark:bg-ink-800/60">
+              { label: 'Total', value: summary.totalAmount },
+              { label: 'Parget / Rajan Book', value: summary.businessCardAmount },
+              { label: 'Tax', value: summary.taxAmount },
+              { label: 'Materials', value: summary.materialAmount },
+              { label: 'Tools', value: summary.toolAmount },
+              { label: 'Fuel', value: summary.fuelAmount },
+              { label: 'Meals', value: summary.mealsAmount },
+              { label: 'Misc', value: summary.miscAmount }
+            ].map(({ label, value }) => (
+              <div key={label} className="rounded-3xl bg-ink-50 p-4 dark:bg-ink-800/60">
                 <div className="text-sm text-ink-500">{label}</div>
                 <div className="text-2xl font-semibold">{formatCurrency(Number(value))}</div>
               </div>

@@ -37,7 +37,8 @@ export async function verifyAuthToken(token: string): Promise<AuthUser> {
 }
 
 export async function getCurrentUser() {
-  const token = cookies().get(AUTH_COOKIE)?.value;
+  const cookieStore = await cookies();
+  const token = cookieStore.get(AUTH_COOKIE)?.value;
   if (!token) return null;
 
   try {
@@ -69,7 +70,7 @@ export async function createSession(userId: string, rememberDevice: boolean, met
 
 export async function buildAuthCookie(user: { id: string; name: string; role: string }, sessionId: string, rememberDevice: boolean) {
   const token = await createAuthToken(user, sessionId);
-  const cookieStore = cookies();
+  const cookieStore = await cookies();
   cookieStore.set(AUTH_COOKIE, token, {
     httpOnly: true,
     sameSite: 'lax',
@@ -80,7 +81,7 @@ export async function buildAuthCookie(user: { id: string; name: string; role: st
 }
 
 export async function clearAuthCookie() {
-  const cookieStore = cookies();
+  const cookieStore = await cookies();
   cookieStore.set(AUTH_COOKIE, '', { path: '/', expires: new Date(0) });
 }
 

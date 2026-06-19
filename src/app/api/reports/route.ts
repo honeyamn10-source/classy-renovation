@@ -47,7 +47,7 @@ export async function GET(request: NextRequest) {
 
   if (format === 'pdf') {
     const buffer = await renderReportPdf(payload);
-    return new NextResponse(buffer, {
+    return new NextResponse(new Uint8Array(buffer), {
       headers: {
         'Content-Type': 'application/pdf',
         'Content-Disposition': `attachment; filename="${fileName}.pdf"`
@@ -57,7 +57,7 @@ export async function GET(request: NextRequest) {
 
   if (format === 'excel') {
     const buffer = await renderReportExcel(payload);
-    return new NextResponse(buffer as ArrayBuffer, {
+    return new NextResponse(new Uint8Array(buffer), {
       headers: {
         'Content-Type': 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
         'Content-Disposition': `attachment; filename="${fileName}.xlsx"`
