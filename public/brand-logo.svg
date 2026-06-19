@@ -1,0 +1,13 @@
+<svg width="240" height="64" viewBox="0 0 240 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="240" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8C94D"/>
+      <stop offset="1" stop-color="#B77C0E"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="#12100D"/>
+  <path d="M15 46L25 18H39L49 46H39.5L37.5 39.5H26.5L24.5 46H15Z" fill="url(#g)"/>
+  <path d="M28 32H36" stroke="#12100D" stroke-width="4" stroke-linecap="round"/>
+  <text x="78" y="27" fill="#12100D" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Classy Renovations</text>
+  <text x="78" y="47" fill="#6B6455" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600" letter-spacing="2">BUSINESS EXPENSE MANAGER</text>
+</svg>
