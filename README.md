@@ -1,10 +1,14 @@
 # Classy Renovations Business Expense Manager
 
-Production-focused Next.js 15 expense platform for Classy Renovations Inc.
+A business expense platform for receipt capture, card-based spending analysis, and monthly reporting.
+
+**Stage:** In development. External OCR, storage, and reporting integrations require configuration and deployment validation.
+
+Built with Next.js, TypeScript, PostgreSQL, and a background receipt-processing workflow.
 
 ## Features
 
-- PIN login for Parget and Rajan
+- PIN login for two business partners
 - Receipt and invoice uploads with OCR and AI extraction
 - Partner and card ownership tracking
 - Executive dashboards and charts
@@ -23,7 +27,7 @@ Production-focused Next.js 15 expense platform for Classy Renovations Inc.
 
 ## Local setup
 
-1. Copy `.env.example` to `.env` and fill in secrets.
+1. Install dependencies with `npm ci`, then copy `.env.example` to `.env` and configure your development services and secrets.
 2. Run Prisma generation and migration:
    ```bash
    npm run prisma:generate
