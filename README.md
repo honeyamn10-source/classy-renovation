@@ -1,3 +1,5 @@
+![Classy Renovations — project cover](https://github.com/honeyamn10-source/honeyamn10-source/blob/main/assets/classy-renovation.svg?raw=true)
+
 # Classy Renovations Business Expense Manager
 
 A business expense platform for receipt capture, card-based spending analysis, and monthly reporting.
