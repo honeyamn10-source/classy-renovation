@@ -1,15 +1,23 @@
-## Problem
+## Description
 
-Describe the user-visible issue.
+<!-- What does this PR change and why? -->
 
-## Change
+## Type of change
 
-Explain the resulting behavior.
+- [ ] Bug fix
+- [ ] New feature
+- [ ] Documentation
+- [ ] CI / infrastructure
+- [ ] Refactor
 
-## Validation
+## How was it tested?
 
-List executed checks and any untested paths.
+- [ ] `npm run check` passes
+- [ ] `npm test` passes
+- [ ] Manual verification (describe)
 
-## Dependencies and data
+## Checklist
 
-Identify new dependencies/licenses and confirm examples contain no private data.
+- [ ] My code follows the style of this project
+- [ ] I updated documentation where behaviour changed
+- [ ] No secrets or personal data are included in this PR
