@@ -19,7 +19,7 @@
     "@aws-sdk/client-textract": "^3.848.0",
     "@google-cloud/vision": "^5.2.5",
     "@prisma/client": "^6.10.1",
-    "@radix-ui/react-dialog": "^1.1.14",
+    "@radix-ui/react-dialog": "^1.1.23",
     "@radix-ui/react-dropdown-menu": "^2.1.15",
     "@radix-ui/react-select": "^2.2.5",
     "@radix-ui/react-slot": "^1.2.3",
