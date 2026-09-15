@@ -13,7 +13,7 @@ export default async function MonthlySummaryPage() {
             <CardTitle>{summary.month}/{summary.year} Monthly Summary</CardTitle>
           </CardHeader>
           <CardContent className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-            {[
+            {([
               ['Total', summary.totalAmount],
               ['Parget / Rajan Book', summary.businessCardAmount],
               ['Tax', summary.taxAmount],
@@ -22,8 +22,8 @@ export default async function MonthlySummaryPage() {
               ['Fuel', summary.fuelAmount],
               ['Meals', summary.mealsAmount],
               ['Misc', summary.miscAmount]
-            ].map(([label, value]) => (
-              <div key={label as string} className="rounded-3xl bg-ink-50 p-4 dark:bg-ink-800/60">
+            ] as const).map(([label, value]) => (
+              <div key={label} className="rounded-3xl bg-ink-50 p-4 dark:bg-ink-800/60">
                 <div className="text-sm text-ink-500">{label}</div>
                 <div className="text-2xl font-semibold">{formatCurrency(Number(value))}</div>
               </div>

@@ -1,6 +1,7 @@
 import { db } from '@/lib/db';
+import type { Prisma } from '@prisma/client';
 
-export async function logActivity(userId: string, action: string, entityType?: string, entityId?: string, metadata?: Record<string, unknown>) {
+export async function logActivity(userId: string, action: string, entityType?: string, entityId?: string, metadata?: Prisma.InputJsonObject) {
   return db.activityLog.create({
     data: {
       userId,

@@ -17,7 +17,7 @@ new Worker(
   async (job) => {
     const { expenseId, uploadId } = job.data as { expenseId: string; uploadId: string };
 
-    await db.ocrJob.create({
+    await db.oCRJob.create({
       data: {
         uploadId,
         provider: 'local',

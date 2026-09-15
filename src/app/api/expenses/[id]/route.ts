@@ -29,6 +29,6 @@ export async function PATCH(request: NextRequest, { params }: { params: Promise<
   }
 
   const expense = await db.expense.update({ where: { id }, data: payload.data, include: { category: true, card: true, uploadedBy: true, expenseOwner: true, vendor: true } });
-  await logActivity(auth.user.id, 'expense.updated', 'Expense', expense.id, payload.data as Record<string, unknown>);
+  await logActivity(auth.user.id, 'expense.updated', 'Expense', expense.id, payload.data);
   return NextResponse.json({ expense });
 }

@@ -43,6 +43,10 @@ Built with Next.js, TypeScript, PostgreSQL, and a background receipt-processing 
 
 ## Docker
 
+This application needs a Node.js server, PostgreSQL and Redis. GitHub Pages cannot run its authenticated API or receipt worker. GitHub Actions validates the server build; it does not deploy the app. The unrelated Jekyll and static-export deployment templates have been replaced with server-build validation.
+
+The Next.js build generates the standalone server expected by the Dockerfile. Before a customer deployment, configure the services and secrets below, apply migrations, and validate login, uploads, receipt processing and reports against a test database.
+
 Run the full stack:
 
 ```bash
