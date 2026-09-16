@@ -1,6 +1,10 @@
 <!-- classy-renovation | Bittu Sharma | ultra-level professional README -->
 <p align="center">
-  <img src="docs/assets/logo.svg" alt="Classy Renovation logo" width="100%" />
+  <img src="docs/assets/logo.svg" alt="classy-renovation logo" width="100%" />
+</p>
+
+
+<p align="center">
 </p>
 
 
