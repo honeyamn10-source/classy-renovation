@@ -11,6 +11,10 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/honeyamn10-source/classy-renovation/actions/workflows/nextjs.yml"><img src="https://github.com/honeyamn10-source/classy-renovation/actions/workflows/nextjs.yml/badge.svg" alt="CI"></a>
+</p>
+
+<p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a>
   <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/next.js-15-000000.svg" alt="Next.js 15"></a>
   <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/typescript-5-3178C6.svg" alt="TypeScript"></a>
