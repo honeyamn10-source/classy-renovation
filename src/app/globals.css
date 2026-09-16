@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 38 35% 96%;
+  --foreground: 28 18% 8%;
+  --card: 0 0% 100%;
+  --card-foreground: 28 18% 8%;
+  --muted: 39 28% 92%;
+  --muted-foreground: 34 12% 39%;
+  --border: 36 17% 84%;
+  --ring: 43 90% 46%;
+}
+
+.dark {
+  --background: 30 13% 8%;
+  --foreground: 44 18% 96%;
+  --card: 28 16% 10%;
+  --card-foreground: 44 18% 96%;
+  --muted: 28 12% 16%;
+  --muted-foreground: 35 10% 69%;
+  --border: 28 10% 22%;
+  --ring: 43 90% 54%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-display), Georgia, serif;
+}
+
+a {
+  text-decoration: none;
+}
