@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>classy-renovation — renovation project management</title>
+  <meta name="description" content="classy-renovation is a renovation project management platform built with Next.js, Prisma, and TypeScript. Track projects, manage contractors, budgets, and timelines.">
+  <meta name="keywords" content="renovation, project management, nextjs, prisma, typescript, construction">
+  <meta name="author" content="Bittu Sharma">
+  <link rel="canonical" href="https://honeyamn10-source.github.io/classy-renovation/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="classy-renovation">
+  <meta property="og:title" content="classy-renovation — renovation project management">
+  <meta property="og:description" content="Track renovation projects, manage contractors, budgets, and timelines. Next.js + Prisma.">
+  <meta property="og:url" content="https://honeyamn10-source.github.io/classy-renovation/">
+  <meta property="og:image" content="https://honeyamn10-source.github.io/classy-renovation/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="classy-renovation — renovation project management">
+  <meta name="twitter:description" content="Track renovation projects, manage contractors, budgets, and timelines.">
+  <meta name="twitter:image" content="https://honeyamn10-source.github.io/classy-renovation/og.png">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#64748b">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="assets/site.css">
+  <link rel="sitemap" type="application/xml" href="sitemap.xml">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "classy-renovation",
+    "url": "https://honeyamn10-source.github.io/classy-renovation/",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web (Next.js)",
+    "description": "Renovation project management platform with contractor tracking, budgeting, and timelines.",
+    "author": { "@type": "Person", "name": "Bittu Sharma" },
+    "codeRepository": "https://github.com/honeyamn10-source/classy-renovation"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="classy-renovation home">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#64748b"/><text x="32" y="45" font-family="ui-monospace,Consolas,monospace" font-size="34" font-weight="700" fill="#0b0e14" text-anchor="middle">c</text></svg>
+        classy-renovation
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#tech">Tech Stack</a>
+        <a href="#status">Status</a>
+        <a href="https://github.com/honeyamn10-source/classy-renovation" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch theme">☀️</button>
+      <button class="nav-burger" type="button" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap">
+        <div class="hero-grid">
+          <div class="hero-inner">
+            <span class="status"><span class="dot" aria-hidden="true"></span> In development · MIT</span>
+            <h1>Renovation projects, organized.</h1>
+            <p class="lede">classy-renovation helps you manage renovation projects from planning to completion. Track contractors, budgets, timelines, and documents in one place.</p>
+            <div class="btn-row">
+              <a class="btn btn-ghost" href="https://github.com/honeyamn10-source/classy-renovation" target="_blank" rel="noopener">View on GitHub</a>
+            </div>
+          </div>
+          <div class="term" role="img" aria-label="Dashboard preview placeholder">
+            <div class="term-bar"><i class="t1"></i><i class="t2"></i><i class="t3"></i><span>classy-renovation dashboard</span></div>
+            <div class="term-body">
+<span class="c3">┌─ Project: Kitchen Remodel ─────────────┐</span>
+<span class="c1">│ Budget:     $45,000 / $50,000 (90%)    │</span>
+<span class="c1">│ Timeline:   Week 6 of 12 (50%)         │</span>
+<span class="c1">│ Contractor: ABC Renovations ★★★★★      │</span>
+<span class="c1">│ Status:     In Progress                │</span>
+<span class="c3">└────────────────────────────────────────┘</span>
+
+<span class="c3">┌─ Tasks ────────────────────────────────┐</span>
+<span class="dim">☐ Demolition</span>          <span class="c2">Done</span>
+<span class="dim">☐ Plumbing rough-in</span>     <span class="c2">Done</span>
+<span class="dim">☐ Electrical rough-in</span>   <span class="c3">In Progress</span>
+<span class="dim">☐ Drywall</span>             <span class="dim">Pending</span>
+<span class="dim">☐ Cabinet install</span>       <span class="dim">Pending</span>
+<span class="dim">☐ Countertops</span>           <span class="dim">Pending</span>
+<span class="dim">☐ Final inspection</span>      <span class="dim">Pending</span>
+<span class="c3">└────────────────────────────────────────┘</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="wrap">
+        <h2>Features</h2>
+        <div class="grid cards">
+          <article class="card"><h3>Project Dashboard</h3><p>Overview of budget, timeline, contractor, and status at a glance.</p></article>
+          <article class="card"><h3>Task Management</h3><p>Kanban-style task board with dependencies, assignees, and due dates.</p></article>
+          <article class="card"><h3>Budget Tracking</h3><p>Line-item budgets, expense tracking, variance alerts, payment schedules.</p></article>
+          <article class="card"><h3>Contractor Portal</h3><p>Invite contractors to update progress, upload photos, request payments.</p></article>
+          <article class="card"><h3>Document Vault</h3><p>Store contracts, permits, receipts, designs. Versioned and searchable.</p></article>
+          <article class="card"><h3>Timeline Views</h3><p>Gantt charts, milestone tracking, critical path highlighting.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="tech" class="section alt">
+      <div class="wrap">
+        <h2>Tech Stack</h2>
+        <div class="grid cards">
+          <article class="card"><h3>Next.js 14+</h3><p>App Router, Server Components, Server Actions</p></article>
+          <article class="card"><h3>Prisma ORM</h3><p>Type-safe database access with PostgreSQL</p></article>
+          <article class="card"><h3>TypeScript</h3><p>Strict mode, end-to-end type safety</p></article>
+          <article class="card"><h3>Tailwind CSS</h3><p>Utility-first styling with dark mode</p></article>
+          <article class="card"><h3>Docker</h3><p>Containerized deployment with docker-compose</p></article>
+          <article class="card"><h3>ESLint + Prettier</h3><p>Consistent code style and formatting</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="status" class="section">
+      <div class="wrap">
+        <h2>Status</h2>
+        <ul class="doc-links">
+          <li><strong>Branch:</strong> master</li>
+          <li><strong>Phase:</strong> Active development</li>
+          <li><strong>Database:</strong> PostgreSQL via Prisma</li>
+          <li><strong>Deployment:</strong> Docker Compose, Vercel-ready</li>
+          <li><strong>CI:</strong> GitHub Actions (lint, typecheck, build)</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrap">
+      <p>classy-renovation · <a href="https://github.com/honeyamn10-source/classy-renovation">GitHub</a> · MIT License</p>
+    </div>
+  </footer>
+  <script src="assets/site.js"></script>
+</body>
+</html>
