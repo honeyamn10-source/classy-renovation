@@ -9,12 +9,13 @@
 [![Forks](https://img.shields.io/github/forks/honeyamn10-source/classy-renovation?style=flat-square&logo=github&label=Forks)](https://github.com/honeyamn10-source/classy-renovation/forks)
 [![Issues](https://img.shields.io/github/issues/honeyamn10-source/classy-renovation?style=flat-square&logo=github&label=Issues)](https://github.com/honeyamn10-source/classy-renovation/issues)
 [![Last Commit](https://img.shields.io/github/last-commit/honeyamn10-source/classy-renovation?style=flat-square&logo=github&label=Last%20Commit)](https://github.com/honeyamn10-source/classy-renovation/commits/master)
-[![License](https://img.shields.io/github/license/honeyamn10-source/classy-renovation?style=flat-square&label=License)](https://github.com/honeyamn10-source/classy-renovation/blob/master/LICENSE)
 
 [Repository](https://github.com/honeyamn10-source/classy-renovation) · [Issues](https://github.com/honeyamn10-source/classy-renovation/issues) · [Pull Requests](https://github.com/honeyamn10-source/classy-renovation/pulls) · [Actions](https://github.com/honeyamn10-source/classy-renovation/actions)
 
 </div>
 <!-- repo-badges:end -->
+
+
 
 
 An expense-management app for a renovation business: track costs, review receipts, manage vendors and prepare reports.
