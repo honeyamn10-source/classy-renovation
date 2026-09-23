@@ -1,84 +1,52 @@
-<!-- classy-renovation | Bittu Sharma | ultra-level professional README -->
-<p align="center">
-  <img src="docs/assets/logo.svg" alt="classy-renovation logo" width="100%" />
-</p>
+![Classy Renovations](docs/assets/cover.svg)
 
+# Classy Renovations
 
-<p align="center">
-</p>
+An expense-management app for a renovation business: track costs, review receipts, manage vendors and prepare reports.
 
+[Project website](https://honeyamn10-source.github.io/classy-renovation/) · [Build results](https://github.com/honeyamn10-source/classy-renovation/actions)
 
-<p align="center">
-  <strong style="font-size:3rem;color:#0EA5E9;">classy-renovation</strong>
-</p>
-<p align="center">
-  <em style="font-size:1.2rem;color:#94A3B8;">Renovation project management system</em>
-</p>
-<p align="center">
-  <img src="https://img.shields.io/badge/TypeScript-TypeScript-blue?logo=typescript&logoColor=white" alt="TypeScript"/>  <img src="https://img.shields.io/badge/Next.js-Next.js-blue?logo=next.js&logoColor=white" alt="Next.js"/>  <img src="https://img.shields.io/badge/Prisma-Prisma-blue?logo=prisma&logoColor=white" alt="Prisma"/>  <img src="https://img.shields.io/badge/PostgreSQL-PostgreSQL-blue?logo=postgresql&logoColor=white" alt="PostgreSQL"/>
-  <img src="https://img.shields.io/badge/License-MIT-blue" alt="MIT License"/>
-  <img src="https://img.shields.io/badge/Loopback-Only-0EA5E9" alt="Loopback Only"/>
-  <img src="https://img.shields.io/badge/ADR-Trail%20(0001..0003)-F59E0B" alt="ADR Trail"/>
-</p>
+## What it does
 
----
+- **Capture receipts.** Upload receipt images and configure OCR processing.
+- **Review expenses.** Keep expense details, vendors, cards and partner views together.
+- **Prepare reports.** Use the dashboard, analytics and report routes to inspect stored costs.
 
-## Why this exists
+## Start from source
 
-A professional renovation project management system built to the portfolio ultra-level standard:
-honest code, loopback-only demos, zero personal emails in history, and every
-architectural decision recorded in the ADR trail.
-
----
-
-## Quick Start
+Node.js, PostgreSQL and Redis. Copy .env.example to .env and replace placeholder secrets. Run npm run worker separately for queued receipt processing.
 
 ```bash
-# Clone and install
 git clone https://github.com/honeyamn10-source/classy-renovation.git
 cd classy-renovation
-# Follow repo-specific setup instructions
+npm ci
+npm run prisma:generate
+# Configure .env and start PostgreSQL + Redis first
+npm run prisma:migrate
+npm run seed
+npm run dev
 ```
 
----
+## Verify
 
-## Features
-
-- Professional codebase with full test coverage
-- Loopback-only serving — zero unauthenticated remote access
-- ADR trail documenting all architectural decisions
-- CI/CD pipeline with lint, test, typecheck, and build
-- Professional identity on all commits
-
----
-
-## Architecture
-
-```mermaid
-graph TB
-    subgraph "Client"
-        UI[Web UI / CLI]
-    end
-    subgraph "Server"
-        API[API Layer]
-        DB[(Database)]
-    end
-    UI --> API
-    API --> DB
-    API -->|Loopback Only| LB[127.0.0.1]
+```bash
+npm run lint
+npm run typecheck
+npm run build
 ```
 
----
+## Scope
 
-## Security
+This website is a project guide. The expense app requires a Node server and database. OCR, storage and model providers need separate configuration and live verification.
 
-- Loopback-only serving (127.0.0.1)
-- Professional commit identity
-- Zero personal emails in history
-- ADR trail for all decisions
+## Find your way around
 
----
+- [Configuration](.env.example)
+- [Data model](prisma/schema.prisma)
+- [Receipt worker](src/workers/receipt-worker.ts)
 
-## License
+## Contributing and license
 
-MIT © 2026 Bittu Sharma
+See [CONTRIBUTING.md](CONTRIBUTING.md). Include a minimal reproduction and runtime versions with bug reports; remove credentials from logs.
+
+MIT — see [LICENSE](LICENSE). Third-party dependencies retain their applicable licenses.
