@@ -15,6 +15,18 @@
 </div>
 <!-- repo-badges:end -->
 
+<!-- professional-meta:start -->
+<div align="center">
+
+[![ci](https://github.com/honeyamn10-source/classy-renovation/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/honeyamn10-source/classy-renovation/actions/workflows/ci.yml) [![codeql](https://github.com/honeyamn10-source/classy-renovation/actions/workflows/codeql.yml/badge.svg?branch=master)](https://github.com/honeyamn10-source/classy-renovation/actions/workflows/codeql.yml)
+
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-FF4438?style=flat-square&logo=redis&logoColor=white)
+
+[Documentation](docs) · [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md) · [Changelog](CHANGELOG.md) · [Live Demo](https://honeyamn10-source.github.io/classy-renovation/)
+
+</div>
+<!-- professional-meta:end -->
+
 
 
 
